@@ -1,0 +1,52 @@
+/* CIT 230 - Assignment Weather Site CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: #0B243B;
+}
+
+h1 {
+    font-size: 1.xrem;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size:  1.xrem ;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width:  100%;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color:  #0B243B;
+    color: whitesmoke;
+}
+
+header img {
+    width:  15%;
+    height: auto;
+    float: right;
+    z-index: 100;
+    position: relative;
+}
+
+footer {
+    font-size: smaller;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    clear: both;
+    position: absolute;
+}
