@@ -1,0 +1,52 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    label {
+        display: block;
+        cursor: pointer;
+        float: right;
+        background-color: #1F4371;
+        color: #FFFFFF;
+    }    
+
+    nav {
+        background-color: #1F4371;
+        color: #FFFFFF;
+    }
+
+    nav,label {
+        background-color: #1F4371;
+    }
+
+    #nav {
+        clear: both;
+        background-color: #1F4371;
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        display: none;
+    }
+
+    #nav a {
+        clear: right;
+        float: none;
+        display: block;
+        border-bottom: 1px solid #1F4371;
+        margin: 0;
+        width: 100%;
+    }
+
+    #toggle:checked + #nav {
+        color: #FFFFFF;
+        display: block;
+    }
+
+    section.forecast {
+        display: none;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+    }
+}
