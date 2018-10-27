@@ -8,6 +8,7 @@
     <!-- External style references in the proper cascading order -->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/device-small.css">
     <link rel="stylesheet" href="css/device-large.css">
@@ -22,23 +23,24 @@
     <header>
         <div class="header">
             <img class="img-left" src="images/logo.png" alt="Logo"> 
-            <img class="img-right" src="images/sunny.png" alt="Climate"> 
+            <img class="img-right" src="images/sunny.png" alt="Current Weather"> 
             <h1>Clima Weather</h1>
             <h3>Weather conditions when you need it most</h3>
         </div>
     </header>
 
     <nav>
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <ul id="nav">
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>		
+        <div class="topnav" id="myNav">
+            <a href="#">Home</a>
+            <a href="#" class="active">Preston</a>
+            <a href="#">Soda Springs</a>
+            <a href="#">Fish Haven</a>
+            <a href="#">Storm Center</a>
+            <a href="#">Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </nav>
 
     <main>
@@ -49,8 +51,8 @@
         <div class="div-weathersummary">
             <figure>
                 <img src="images/franklin-large.jpg" alt="Town"
-                    srcset="images/franklin-small.jpg 400w,
-                            images/franklin-large.jpg 800w">
+                    srcset="images/franklin-small.jpg 800w,
+                            images/franklin-large.jpg 1200w">
             </figure>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
