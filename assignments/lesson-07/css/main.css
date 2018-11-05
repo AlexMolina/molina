@@ -11,13 +11,13 @@ body {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.5vw;
     color: #FFFFFF;
     display: inline;
 }
 
 h2 {
-    font-size:  2rem ;
+    font-size:  1vw ;
     text-align: center;
     border-bottom: 0px solid #000000;
 }
@@ -28,9 +28,10 @@ h3 {
 }
 
 header {
+    max-width: 100%;
+    width: 100%;
     background-color: #000000;
     color: #FFFFFF;
-    width: 100%;
 }
 
 header, main, footer {
@@ -45,9 +46,11 @@ footer, footer a {
 }
 
 .header {
+    max-width: 800px;
     display: block;
     text-align: center;
-    max-width: 800px;
+    display: flex;
+	flex-direction: row;
 }
 
 header img {
@@ -66,6 +69,7 @@ header img {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 .topnav a {
@@ -73,9 +77,10 @@ header img {
   display: block;
   color: #FFFFFF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 15px;
   text-decoration: none;
   font-size: 17px;
+  flex: 1 1 100%;
 }
 
 .topnav a:hover {
@@ -93,6 +98,12 @@ header img {
 
 main {
     max-width: 800px;
+}
+
+main h2 {
+    font-size:  2.5vw ;
+    text-align: center;
+    border-bottom: 0px solid #000000;
 }
 
 img {
@@ -204,18 +215,63 @@ footer {
     color: #393939;
 }
 
-/* Lesson 07 - Flexbox site header */
-.headerFlex {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-.headerFlex-section {
-    display: flex;
-    text-align: center;
-    max-width: 800px;
+/* Lesson 07 - Flexbox and Gallery */
+picture {
+	flex: 0 1 8vw; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
 }
 
-.headerFlex-item {
-    align-self: stretch;
+picture img {
+	width: 52%;
+	height: auto;
+}
+
+.headings {
+	flex: auto;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 800px;
+    padding: 5px;
+    /* border: 1px solid #D7DBDD; */
+}
+
+.gallery div {
+    margin: auto;
+    text-align: center;
+    width: 220px;
+}
+
+.gallery div img {
+    width: auto;
+    height: 210px;
+}
+
+.gallery div img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.text-content {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    left: 0;
+    top: 0;
+    width: 220px;
+}
+  
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gallery.div:hover span.text-content {
+    opacity: 1;
 }
