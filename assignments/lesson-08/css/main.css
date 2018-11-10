@@ -2,9 +2,12 @@
     margin: auto; 
     box-sizing: border-box;  
     max-width: 100%;
-    font-family: "Ubuntu, sans-serif";
   }
   
+  table {
+    font-family: "Ubuntu, sans-serif";
+  }
+
   h2 {
       text-align: center;
   }
@@ -32,10 +35,10 @@
     text-align: center;
   }
   
-  caption {
-    padding: 10px;
-    caption-side: bottom;
-  }
+tbody tr:nth-child(4) td:nth-child(3){
+    background-color: #628ca6;
+    color:#fff;
+}
   
   table {
     border-collapse: collapse;
@@ -57,8 +60,7 @@
     color: #000000;
   }
   
-  .highlight {
-    background-color: #628ca6;
-    color: #fff;
+  .italic {
+    font-style: italic;
   }
   
