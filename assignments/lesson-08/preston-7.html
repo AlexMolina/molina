@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alex Molina Moran">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Assignment Weather page template for Alex Molina Moran Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+        <!-- External style references in the proper cascading order -->    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/device-small.css">
+        <link rel="stylesheet" href="css/device-large.css">
+        <title>Clima Weather</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="js/hamburger.js"></script>            
+        <script src="js/windchill.js"></script>            
+    </head>
+    <body>   
+      
+        <header>
+            <div  class="header">
+                <picture> 
+                    <img src="images/logo.png" alt="Logo"> 
+                </picture>
+                <section class="headings"> 
+                    <h1>Clima Weather</h1>
+                    <h2>Weather conditions when you need it most</h2>
+                </section>
+                <picture> 
+                    <img src="images/sunny.png" alt="Current Weather"> 
+                </picture>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myNav">
+                <a href="#">Home</a>
+                <a href="preston-7.html" class="active">Preston</a>
+                <a href="#">Soda Springs</a>
+                <a href="#">Fish Haven</a>
+                <a href="stormcenter.html">Storm Center</a>
+                <a href="gallery-7.html">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <br>
+            <h2>The Town of Preston</h2>
+            <br>
+
+            <div class="div-weathersummary">
+                <figure>
+                    <img src="images/franklin-large.jpg" alt="Town" sizes="50vw"
+                        srcset="images/franklin-small.jpg 300w,
+                                images/franklin-large.jpg 1200w">
+                </figure>
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <div class="div-clear">
+                        <p class="label-text">Currently:</p>
+                        <p class="value-text">Sunny</p><br>
+                        <p class="label-text">Temperature:</p>
+                        <p class="value-text">76 &deg;F</p><br>
+                        <p class="label-text">Humidity:</p>
+                        <p class="value-text">69%</p><br>
+                        <p class="label-text">Precipitation:</p>
+                        <p class="value-text">0 inches</p><br>
+                        <p class="label-text">Wind Speed:</p>
+                        <p class="value-text">5 mph</p>
+                    </div>
+                </section>
+            </div>   
+            
+            <section class="forecast">
+                <h3>High Temperature Forecast</h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>  
+
+            <article >
+                <h3>Founders Day Fresco</h3>
+                <p><strong>By Alex Molina</strong></p>
+                <img src="images/people.jpg" alt="people">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at felis at nisi aliquet rhoncus eget sit amet augue. Duis ut vestibulum ipsum, sed sollicitudin ipsum. Nam mauris urna, cursus non orci quis, molestie auctor tortor. Nullam ante tortor, tincidunt eget ligula id, ullamcorper vulputate ex. Vestibulum et ligula nisl. Suspendisse metus metus, viverra vel fringilla sed, imperdiet vel libero. Vivamus ut enim velit. Phasellus a massa non purus egestas sagittis. Aliquam vel mattis nisl.</p>
+            </article>
+        </main>
+
+        <footer>
+        &copy; <span id="currentdate"></span> | Alex Molina Moran | Guatemala, C.A. | <a href="http://www.byui.edu/online/" target="_blank">BYU-Idaho Online Learning</a> 
+        </footer>
+
+        <script src="js/currentdate.js"></script>            
+    </body>
+</html>

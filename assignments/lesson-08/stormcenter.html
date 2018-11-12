@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alex Molina Moran">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Assignment Weather page template for Alex Molina Moran Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+        <!-- External style references in the proper cascading order -->    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/device-small.css">
+        <link rel="stylesheet" href="css/device-large.css">
+        <title>Clima Weather</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/hamburger.js"></script>            
+        <script src="js/windchill.js"></script>            
+        <script src="js/validations.js"></script>            
+    </head>
+    <body>   
+      
+        <header>
+            <div  class="header">
+                <picture> 
+                    <img src="images/logo.png" alt="Logo"> 
+                </picture>
+                <section class="headings"> 
+                    <h1>Clima Weather</h1>
+                    <h2>Weather conditions when you need it most</h2>
+                </section>
+                <picture> 
+                    <img src="images/sunny.png" alt="Current Weather"> 
+                </picture>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myNav">
+                <a href="#">Home</a>
+                <a href="preston-7.html">Preston</a>
+                <a href="#">Soda Springs</a>
+                <a href="#">Fish Haven</a>
+                <a href="stormcenter.html" class="active">Storm Center</a>
+                <a href="gallery-7.html">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <br>
+            <h2>Storm Center</h2>
+            <br>
+
+            <div class="container">
+                <form class="form-horizontal" action="thanks.html">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="fullname">Full name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="fullname" placeholder="Enter full name" pattern="[a-zA-Z]{10,50}+$" maxlength="50" title="Username should only contain letters. e.g. John Doe" required autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10"> 
+                        <input type="email" class="form-control" id="email" placeholder="Enter email in format correo123@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="telephone">Telephone:</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="telephone" placeholder="Enter telephone number" maxlength="8" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="zipcode">Zip Code:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="zipcode" placeholder="Enter Zip Code" pattern="(\d{5}([\-]\d{4})?)" maxlength="5" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="stormdate">Storm Date:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="stormdate" placeholder="Enter storm date" maxlength="10">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="stormtype">Storm Type:</label>
+                    <div class="col-sm-10">
+                        <input list="stormtypes" name="stormtype" class="form-control" id="stormtype" placeholder="Select storm type">
+                        <datalist id="stormtypes">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>                    
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="severity">Storm Severity:</label>
+                    <div class="col-sm-10">
+                        <input type="range" class="form-control" id="severity" placeholder="Enter storm severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="stormregion">Storm Region:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control">
+                        <option selected disabled>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="userindanger">Danger Level:</label>
+                    <div class="col-sm-10">
+                        <label class="radio-inline">
+                            <input type="radio" name="userindanger">Yes
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="userindanger" checked>Maybe
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="userindanger">No
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="comments">Comments:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control rounded-0" id="comments" rows="5"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="form-group"> 
+                    <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+                </form>
+            </div>   
+        </main>
+
+        <footer>
+        &copy; <span id="currentdate"></span> | Alex Molina Moran | Guatemala, C.A. | <a href="http://www.byui.edu/online/" target="_blank">BYU-Idaho Online Learning</a> 
+        </footer>
+
+        <script src="js/currentdate.js"></script>            
+    </body>
+</html>
