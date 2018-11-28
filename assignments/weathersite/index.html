@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alex Molina Moran">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Assignment Weather page template for Alex Molina Moran Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+        <!-- External style references in the proper cascading order -->    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/device-small.css">
+        <link rel="stylesheet" href="css/device-large.css">
+        <title>Clima Weather</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="js/hamburger.js"></script>            
+    </head>
+    <body>   
+      
+        <header>
+            <div  class="header">
+                <picture> 
+                    <img src="images/logo.png" alt="Logo"> 
+                </picture>
+                <section class="headings"> 
+                    <h1>Clima Weather</h1>
+                    <h2>Weather conditions when you need it most</h2>
+                </section>
+                <picture> 
+                    <img src="images/sunny.png" alt="Current Weather"> 
+                </picture>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="preston.html">Preston</a>
+                <a href="sodasprings.html">Soda Springs</a>
+                <a href="fishhaven.html">Fish Haven</a>
+                <a href="stormcenter.html">Storm Center</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <br>
+            <h2>The Towns</h2>
+            <br>
+
+            <section class="home-section">
+                <div class="div-section">
+                    <div class="town-data">
+                        <h2 id="preston" class="cities"></h2>
+                        <p id="motto1" class="mottos"></p>
+                        <P class="years"><strong>Year Founded: </strong><span id='yf1' class="years"></span></p>
+                        <p class="pop"><strong>Population: </strong><span id='pop1' class='pop'></span></p>
+                        <p class="arf"><strong>Annual Rain Fall: </strong><span id="arf1" class="arf"></span></p>
+                    </div>
+                    <div>
+                        <img class="img-town" src="images/preston.jpg" alt="Preston town">
+                    </div>
+                </div>
+                <div class="div-section">
+                        <div class='town-data'>
+                            <h2 id="soda-springs" class="cities"></h2>
+                            <p id="motto2" class="mottos"></p>
+                            <P class="years"><strong>Year Founded: </strong><span id='yf2' class="years"></span></p>
+                            <p class="pop"><strong>Population: </strong><span id='pop2' class="pop"></span></p>
+                            <p class="arf"><strong>Annual Rain Fall: </strong><span id='arf2' class="arf"></span></p>
+                        </div>
+                        <div>
+                            <img  class="img-town" src="images/soda-springs.jpg" alt="Soda Springs town">
+                        </div>
+                    </div>
+                <div class="div-section" id="fh1">
+                    <div class='town-data'>
+                        <h2 id="fish-haven" class="cities"></h2>
+                        <p id="motto3" class="mottos"></p>
+                        <P class="years" id="years4"><strong>Year Founded: </strong><span id='yf3' class="years"></span></p>
+                        <p class="pop" id="pop4"><strong>Population: </strong><span id='pop3' class="pop"></span></p>
+                        <p class="arf" id="arf4"><strong>Annual Rain Fall : </strong><span id='arf3' class="arf"></span></p>
+                    </div>
+                    <div>
+                        <img  class="img-town" src="images/fish-haven.jpg" alt="Fish Haven town">
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+        &copy; <span id="currentdate"></span> | Alex Molina Moran | Guatemala, C.A. | <a href="http://www.byui.edu/online/" target="_blank">BYU-Idaho Online Learning</a> 
+        </footer>
+
+        <script src="js/currentdate.js"></script>            
+        <script src="js/home-cities.js"></script>            
+    </body>
+</html>

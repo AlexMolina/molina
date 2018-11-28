@@ -1,0 +1,39 @@
+@media only screen and (min-width: 769px) {
+    nav {
+        background-color: #1F4371;
+        color: #FFFFFF;
+    }
+
+    .home-section {
+        display: flex;
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .div-section {
+        display: inline-block;
+        border: solid grey .5em;
+        background-color: #FFFFFF;
+        position: relative;
+        left: 0em;
+        margin: .04em;
+        min-height: 20em;
+    }    
+
+    .town-data {
+        min-height: 13em;
+        text-align: center;
+    }    
+
+    .img-town {
+        min-height: 14em;
+        padding-top: 2.4em;
+    }
+
+    .home-section h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: #1F4371;
+    }
+}
