@@ -1,0 +1,352 @@
+/* CIT 230 - Assignment Term Site Project CSS Template */
+/* * is a wildcard referring to all elements. */
+* { margin: auto; box-sizing: border-box;  max-width: 100%;}
+
+body {
+    font-size: 14px;
+    line-height: 30px;
+    font-family: Arial, Helevetica, Sans-Serif;
+    background-color: #e9e7e3;
+    color: #666;
+}
+
+h1 {
+    font-size: 2.5vw;
+    color: #FFFFFF;
+    display: inline;
+}
+
+h2 {
+    font-size:  1vw ;
+    text-align: center;
+    border-bottom: 0px solid #104c97;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    background-color: #104c97;
+    color: #FFFFFF;
+}
+
+header, main, footer {
+    padding: .5rem;
+    width: 100%;
+}
+
+footer, footer a {
+    display: block;
+    text-align: center;
+    max-width: 800px;
+}
+
+.header {
+    max-width: 800px;
+    display: block;
+    text-align: center;
+    display: flex;
+	flex-direction: row;
+}
+
+header img {
+    width:  30%;
+    height: auto;
+    z-index: 100;
+    position: relative;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d0e7e5;
+    color: #000;
+    float: none;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  flex: 1 1 100%;
+}
+
+.topnav a:hover {
+  background-color: #104c97;
+  color: #FFD700;
+}
+
+.active {
+  background-color: #104c97;
+  color: #FFF !important;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+main {
+    max-width: 800px;
+}
+
+main h2 {
+    font-size:  2.5vw ;
+    text-align: center;
+    border-bottom: 0px solid #104c97;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.img-left {
+    float: left;
+    width: 8%;
+}
+
+.img-right {
+    float: right;
+    width: 8%;
+}
+
+.img-city {
+    float: left;
+}
+
+section.forecast {
+    align-content: center;
+    background-image: -webkit-linear-gradient(#384faf,#4f95b9);
+    background-image: linear-gradient(#384faf,#4f95b9);
+    margin-bottom: 1rem;
+}
+
+section.forecast {
+    align-content: center;
+    background-image: -webkit-linear-gradient(#384faf,#4f95b9);
+    background-image: linear-gradient(#384faf,#4f95b9);
+    margin-bottom: 1rem;
+}
+
+.div-weathersummary {
+    position: relative;
+    color: white;
+}
+
+section.weathersummary {
+    opacity: 0.9;
+    background-image: -webkit-linear-gradient(#384faf,#4f95b9);
+    background-image: linear-gradient(#384faf,#4f95b9);
+    position: absolute;
+    top: 1rem; 
+    left: 1rem; 
+    width: 60%;
+}
+
+section h3 {
+    padding-left: 1rem;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+p.label-text {
+    display: inline;
+    font-weight: bold;  
+    padding-left: 1rem;
+}
+
+p.value-text {
+    padding-left: 1rem;
+    text-align: right;
+    display: inline;
+    font-weight: bold;  
+    color: #FFD700;
+}
+
+figure {
+    margin: 0;
+}
+
+table {
+    max-width: 100%;
+    width: 90%;
+}
+
+table, td, th {
+    text-align: center;
+}
+
+article {
+    border-style: solid;
+    border-width: 0.01rem;
+    background-color: #4f95b9;
+    border-color: #d0e7e5;
+    overflow: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1rem;
+}
+
+article img {
+    position: relative;
+    float: right;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    font-size: smaller;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    clear: both;
+    background-color: #DADADA;
+    color: #666;
+}
+
+/* Lesson 07 - Flexbox and Gallery */
+picture {
+	flex: 0 1 8vw; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
+}
+
+picture img {
+	width: 52%;
+	height: auto;
+}
+
+.headings {
+	flex: auto;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 800px;
+    padding: 5px;
+    /* border: 1px solid #D7DBDD; */
+}
+
+.gallery div {
+    margin: auto;
+    text-align: center;
+    width: 220px;
+}
+
+.gallery div img {
+    width: auto;
+    height: 210px;
+}
+
+.gallery div img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.text-content {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    left: 0;
+    top: 0;
+    width: 220px;
+}
+  
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gallery.div:hover span.text-content {
+    opacity: 1;
+}
+
+table {
+  font-family: "Ubuntu, sans-serif";
+}
+
+thead,
+tfoot {
+  background-color: #7fb9c2;
+  color: #000;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+tfoot {
+  font-size: 0.5vw;
+}
+
+thead tr:nth-child(2) {
+  background-color: #628ca6;
+  color: #fff;
+  font-size: 1vw;
+}
+
+tbody {
+  background-color: #e7f0ed;
+  text-align: center;
+}
+  
+tbody tr:nth-child(4) td:nth-child(3){
+    background-color: #628ca6;
+    color:#fff;
+}
+  
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: .9rem;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 10px 10px 15px 0px #628ca6;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #e7ffed;
+  color: #104c97;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Lesson 08 - Storm Center Form */
+input:invalid {
+  border-color: red;
+}
+input,
+input:valid {
+  border-color: #ccc;
+}
+
+.booking-container {
+    background-color: #e9e7e3;
+    color: #666;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+	flex-direction: row;
+}

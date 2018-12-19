@@ -1,0 +1,92 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: #d0e7e5;
+        color: #000;
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    section.forecast {
+        display: none;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 6vw;
+        color: #FFFFFF;
+        display: inline;
+    }
+    
+    h2 {
+        font-size:  3vw ;
+        text-align: center;
+        border-bottom: 0px solid #104c97;
+    }
+    
+    /* Lesson 07 - Flexbox */
+    picture {
+        flex: 0 1 18vw; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
+    }
+
+    .gallery div img {
+        width: auto;
+        height: 220px;
+    }
+
+    .gallery div img:hover {
+        box-shadow: 0 0 0 0;
+    }
+
+    /* Lesson 09 - Home Cities */
+    .home-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto; 
+    }
+
+    .town-data {
+        text-align: center;
+    }
+
+    .mottos, .years, .pop, .arf {
+        font-size: 1.2em;
+    }
+
+    .div-section {
+        display: block;
+        border: solid grey .5em;
+        background-color: #FFFFFF;
+        margin: 1em;        
+    }
+
+    .home-section h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: #d0e7e5;
+    }
+
+        
+}
