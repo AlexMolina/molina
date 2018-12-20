@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alex Molina Moran">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Assignment Term Site Project for Alex Molina Moran Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+        <!-- External style references in the proper cascading order -->    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/device-small.css">
+        <link rel="stylesheet" href="css/device-large.css">
+        <title>The Temple Inn & Suites</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="js/hamburger.js"></script>            
+    </head>
+    <body>   
+      
+        <header>
+            <div class="header">
+                <picture> 
+                    <img src="images/logo.png" alt="Logo"> 
+                </picture>
+                <section class="headings"> 
+                    <h1>The Temple Inn & Suites</h1>
+                    <h2>Comfort like in heaven</h2>
+                </section>
+            </div>
+            <div class="booking-container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Arrive <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <input type="date" class="form-control" id="arrive" maxlength="10">
+                    </div>   
+                    <div class="col-sm-3">
+                        <p>Depart <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <input type="date" class="form-control" id="depart" maxlength="10">
+                    </div>       
+                    <div class="col-sm-3">
+                        <p>Rooms <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <select class="form-control">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>                                                          
+                    <div class="col-sm-3">
+                            <P>&nbsp;</P>
+                            <div class="form-group"> 
+                                <button type="submit" class="btn btn-primary">Reserve now</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myNav">
+                <a href="#" class="active">Home</a>
+                <a href="#">Temple</a>
+                <a href="#">Reservation</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+
+            <div>
+                <img class="mySlides" src="images/guatemala_city_guatemala_temple_lds.jpg">
+                <img class="mySlides" src="images/quetzaltenango_guatemala_temple_lds.jpg">
+                <img class="mySlides" src="images/tegucigalpa_honduras_temple_lds.jpg">
+                <img class="mySlides" src="images/san_salvador_el_salvadot_temple_lds.jpg">
+            </div>            
+
+
+            <br>
+            <h2>Temple Information and Contact</h2>
+            <br>
+
+            <section class="home-section">
+                <div class="div-section">
+                    <div class="town-data">
+                        <strong>Guatemala City Temple</strong>
+                        <p><strong>Address</strong></br>
+                            24 Avenida 2-20, Zona 15</br>
+                            Vista Hermosa 1</br>
+                            Guatemala Guatemala City, Guatemala</br>
+                            <strong>Telephone</strong></br>
+                            (502) 2369-3426</br>
+                            <strong>Services</strong></br>
+                            Clothing rental available</br>
+                            No cafeteria available</br>
+                            Patron housing available</br>
+                            Distribution center nearby</br>&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <img class="img-town" src="images/guatemala_city_guatemala_temple_lds-small.jpg" alt="Guatemala City Temple">
+                    </div>
+                </div>
+
+                <div class="div-section">
+                    <div class="town-data">
+                        <strong>The Temple Inn & Suites</strong>
+                        <p><strong>Address</strong></br>
+                            4810 Montgomery Ln #500,</br>
+                            Bethesda, MD 20814</br>
+                            <strong>Telephone</strong></br>
+                            (999) 9999-9999</br>
+                            <strong>Some Free Amenities</strong></br>
+                            Breakfast</br>
+                            Exercise/workout room</br>
+                            Indoor pool</br>
+                            WiFi high-speed internet access</br>
+                            Parking
+                        </p>
+                    </div>
+                    <div>
+                        <img class="img-town" src="images/barcelo-guatemala-city.jpg" alt="The Temple Inn and Suites">
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+        &copy; <span id="currentdate"></span> | Alex Molina Moran | Guatemala, C.A. | <a href="http://www.byui.edu/online/" target="_blank">BYU-Idaho Online Learning</a> 
+        </footer>
+
+        <script src="js/slideshow.js"></script>            
+        <script src="js/currentdate.js"></script>            
+        <script src="js/home-cities.js"></script>            
+    </body>
+</html>
