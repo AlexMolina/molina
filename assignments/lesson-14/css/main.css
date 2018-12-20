@@ -11,19 +11,19 @@ body {
 }
 
 h1 {
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     color: #FFFFFF;
     display: inline;
 }
 
 h2 {
-    font-size:  1vw ;
+    font-size:  2rem ;
     text-align: center;
     border-bottom: 0px solid #104c97;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 3rem;
     color: #FFFFFF;
 }
 
@@ -35,7 +35,7 @@ header {
 }
 
 header, main, footer {
-    padding: .5rem;
+    padding: .1rem;
     width: 100%;
 }
 
@@ -48,7 +48,6 @@ footer, footer a {
 .header {
     max-width: 800px;
     display: block;
-    text-align: center;
     display: flex;
 	flex-direction: row;
 }
@@ -102,7 +101,7 @@ main {
 }
 
 main h2 {
-    font-size:  2.5vw ;
+    font-size:  2.5rem;
     text-align: center;
     border-bottom: 0px solid #104c97;
 }
@@ -218,11 +217,11 @@ footer {
 
 /* Lesson 07 - Flexbox and Gallery */
 picture {
-	flex: 0 1 8vw; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
+	flex: 0 1 13rem; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
 }
 
 picture img {
-	width: 52%;
+	width: 70%;
 	height: auto;
 }
 
@@ -231,6 +230,7 @@ picture img {
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .gallery {
@@ -343,10 +343,16 @@ input:valid {
 }
 
 .booking-container {
-    background-color: #e9e7e3;
+    background-color: #d0e7e5;
     color: #666;
     max-width: 800px;
     text-align: center;
-    display: flex;
-	flex-direction: row;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
 }

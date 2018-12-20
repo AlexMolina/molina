@@ -49,7 +49,7 @@
     
     /* Lesson 07 - Flexbox */
     picture {
-        flex: 0 1 18vw; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
+        flex: 0 1 13rem; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
     }
 
     .gallery div img {

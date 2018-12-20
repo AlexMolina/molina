@@ -7,12 +7,13 @@
         <meta name="description" content="Assignment Term Site Project for Alex Molina Moran Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
         <!-- External style references in the proper cascading order -->    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/device-small.css">
         <link rel="stylesheet" href="css/device-large.css">
-        <title>Clima Weather</title>
+        <title>The Temple Inn & Suites</title>
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -31,43 +32,43 @@
                 </section>
             </div>
             <div class="booking-container">
-                <div class="col-sm-3 booking-input" onclick="toggleDateTimePicker('#booking-desktop .checkin')">
-                    <p>Arrive</p>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <input name="datein" type="text" class="date-picker checkin" id="checkin" readonly="">                        
-                </div>   
-                <div class="col-sm-3 booking-input" onclick="toggleDateTimePicker('#booking-desktop .checkout')">
-                    <p>Depart</p>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <input name="dateout" type="text" class="date-picker checkout" id="checkout" readonly="" placeholder="DD-MM-AAAA">                        
-                </div>       
-                <div class="col-sm-2 booking-input" onclick="toggleGuestsSelect(this)">
-                    <p>Adultos</p>
-                    <p class="value">2</p>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <input type="hidden" name="adultos">
-                    <div class="guests-select">
-                        <div class="number-of-guests">1</div>
-                        <div class="number-of-guests selected">2</div>
-                        <div class="number-of-guests correct-position">3</div>
-                        <div class="number-of-guests">4</div>
-                        <div class="number-of-guests">5</div>    
-                    </div>                        
-                </div>                                                          
-                <div class="col-sm-3 booking-input submit">
-                    <button>Reserve now</button>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Arrive <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <input type="date" class="form-control" id="arrive" maxlength="10">
+                    </div>   
+                    <div class="col-sm-3">
+                        <p>Depart <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <input type="date" class="form-control" id="depart" maxlength="10">
+                    </div>       
+                    <div class="col-sm-3">
+                        <p>Rooms <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <select class="form-control">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>                                                          
+                    <div class="col-sm-3">
+                            <P>&nbsp;</P>
+                            <div class="form-group"> 
+                                <button type="submit" class="btn btn-primary">Reserve now</button>
+                        </div>
+                    </div>
                 </div>
+            
             </div>
         </header>
 
         <nav>
             <div class="topnav" id="myNav">
-                <a href="index.html" class="active">Home</a>
-                <a href="preston.html">Preston</a>
-                <a href="sodasprings.html">Soda Springs</a>
-                <a href="fishhaven.html">Fish Haven</a>
-                <a href="stormcenter.html">Storm Center</a>
-                <a href="gallery.html">Gallery</a>
+                <a href="#" class="active">Home</a>
+                <a href="#">Temple</a>
+                <a href="#">Reservation</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -75,45 +76,59 @@
         </nav>
 
         <main>
+
+            <div>
+                <img class="mySlides" src="images/guatemala_city_guatemala_temple_lds.jpg">
+                <img class="mySlides" src="images/quetzaltenango_guatemala_temple_lds.jpg">
+                <img class="mySlides" src="images/tegucigalpa_honduras_temple_lds.jpg">
+                <img class="mySlides" src="images/san_salvador_el_salvadot_temple_lds.jpg">
+            </div>            
+
+
             <br>
-            <h2>The Towns</h2>
+            <h2>Temple Information and Contact</h2>
             <br>
 
             <section class="home-section">
                 <div class="div-section">
                     <div class="town-data">
-                        <h2 id="preston" class="cities"></h2>
-                        <p id="motto1" class="mottos"></p>
-                        <P class="years"><strong>Year Founded: </strong><span id='yf1' class="years"></span></p>
-                        <p class="pop"><strong>Population: </strong><span id='pop1' class='pop'></span></p>
-                        <p class="arf"><strong>Annual Rain Fall: </strong><span id="arf1" class="arf"></span></p>
+                        <strong>Guatemala City Temple</strong>
+                        <p><strong>Address</strong></br>
+                            24 Avenida 2-20, Zona 15</br>
+                            Vista Hermosa 1</br>
+                            Guatemala Guatemala City, Guatemala</br>
+                            <strong>Telephone</strong></br>
+                            (502) 2369-3426</br>
+                            <strong>Services</strong></br>
+                            Clothing rental available</br>
+                            No cafeteria available</br>
+                            Patron housing available</br>
+                            Distribution center nearby</br>&nbsp;
+                        </p>
                     </div>
                     <div>
-                        <img class="img-town" src="images/preston.jpg" alt="Preston town">
+                        <img class="img-town" src="images/guatemala_city_guatemala_temple_lds-small.jpg" alt="Guatemala City Temple">
                     </div>
                 </div>
+
                 <div class="div-section">
-                        <div class='town-data'>
-                            <h2 id="soda-springs" class="cities"></h2>
-                            <p id="motto2" class="mottos"></p>
-                            <P class="years"><strong>Year Founded: </strong><span id='yf2' class="years"></span></p>
-                            <p class="pop"><strong>Population: </strong><span id='pop2' class="pop"></span></p>
-                            <p class="arf"><strong>Annual Rain Fall: </strong><span id='arf2' class="arf"></span></p>
-                        </div>
-                        <div>
-                            <img  class="img-town" src="images/soda-springs.jpg" alt="Soda Springs town">
-                        </div>
-                    </div>
-                <div class="div-section" id="fh1">
-                    <div class='town-data'>
-                        <h2 id="fish-haven" class="cities"></h2>
-                        <p id="motto3" class="mottos"></p>
-                        <P class="years" id="years4"><strong>Year Founded: </strong><span id='yf3' class="years"></span></p>
-                        <p class="pop" id="pop4"><strong>Population: </strong><span id='pop3' class="pop"></span></p>
-                        <p class="arf" id="arf4"><strong>Annual Rain Fall : </strong><span id='arf3' class="arf"></span></p>
+                    <div class="town-data">
+                        <strong>The Temple Inn & Suites</strong>
+                        <p><strong>Address</strong></br>
+                            4810 Montgomery Ln #500,</br>
+                            Bethesda, MD 20814</br>
+                            <strong>Telephone</strong></br>
+                            (999) 9999-9999</br>
+                            <strong>Some Free Amenities</strong></br>
+                            Breakfast</br>
+                            Exercise/workout room</br>
+                            Indoor pool</br>
+                            WiFi high-speed internet access</br>
+                            Parking
+                        </p>
                     </div>
                     <div>
-                        <img  class="img-town" src="images/fish-haven.jpg" alt="Fish Haven town">
+                        <img class="img-town" src="images/barcelo-guatemala-city.jpg" alt="The Temple Inn and Suites">
                     </div>
                 </div>
             </section>
@@ -124,6 +139,7 @@
         &copy; <span id="currentdate"></span> | Alex Molina Moran | Guatemala, C.A. | <a href="http://www.byui.edu/online/" target="_blank">BYU-Idaho Online Learning</a> 
         </footer>
 
+        <script src="js/slideshow.js"></script>            
         <script src="js/currentdate.js"></script>            
         <script src="js/home-cities.js"></script>            
     </body>
