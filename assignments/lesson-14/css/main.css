@@ -215,7 +215,6 @@ footer {
     color: #666;
 }
 
-/* Lesson 07 - Flexbox and Gallery */
 picture {
 	flex: 0 1 13rem; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
 }

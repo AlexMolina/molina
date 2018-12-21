@@ -47,7 +47,6 @@
         border-bottom: 0px solid #104c97;
     }
     
-    /* Lesson 07 - Flexbox */
     picture {
         flex: 0 1 13rem; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
     }
