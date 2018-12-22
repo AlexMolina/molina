@@ -3,7 +3,7 @@
 * { margin: auto; box-sizing: border-box;  max-width: 100%;}
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     font-family: Arial, Helevetica, Sans-Serif;
     background-color: #e9e7e3;
@@ -224,14 +224,6 @@ picture img {
 	height: auto;
 }
 
-.headings {
-	flex: auto;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -332,7 +324,7 @@ tr:nth-child(even) {
   font-style: italic;
 }
 
-/* Lesson 08 - Storm Center Form */
+/* Contact Form */
 input:invalid {
   border-color: red;
 }
@@ -354,4 +346,46 @@ input:valid {
 .mySlides {
     display: none;
     width: 100%;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #104c97;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #104c97;
+  }
+  
+.headings {
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #104c97;
+    color: #FFD700;
+}
+
+.headings-panel {
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #104c97;
+    color: #FFD700;    
+    height: 5rem;
+    border-radius: 10px; 
+    cursor: pointer;
+    padding-top: 10px;
+    border: 1px solid #666;
 }

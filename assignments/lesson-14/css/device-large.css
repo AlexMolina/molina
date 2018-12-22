@@ -2,6 +2,8 @@
     nav {
         background-color: #d0e7e5;
         color: #000;
+        margin-bottom: 30px;
+        border: 1px solid #104c97;
     }
 
     .home-section {
