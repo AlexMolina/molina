@@ -20,10 +20,10 @@ templeRequest.onload = function() {
   document.getElementById("gtq-address").innerHTML = templeData.temples[1].address;  
   document.getElementById("gtq-telephone").innerHTML = templeData.temples[1].telephone;  
   document.getElementById("gtq-services").innerHTML = templeData.temples[1].services;  
-  document.getElementById("gt-closureYear0").innerHTML = templeData.temples[1].closures[0].closureYear;  
-  document.getElementById("gt-closuresYear0").innerHTML = templeData.temples[1].closures[0].closureDays;  
-  document.getElementById("gt-closureYear1").innerHTML = templeData.temples[1].closures[1].closureYear;  
-  document.getElementById("gt-closuresYear1").innerHTML = templeData.temples[1].closures[1].closureDays;  
+  document.getElementById("gtq-closureYear0").innerHTML = templeData.temples[1].closures[0].closureYear;  
+  document.getElementById("gtq-closuresYear0").innerHTML = templeData.temples[1].closures[0].closureDays;  
+  document.getElementById("gtq-closureYear1").innerHTML = templeData.temples[1].closures[1].closureYear;  
+  document.getElementById("gtq-closuresYear1").innerHTML = templeData.temples[1].closures[1].closureDays;  
 
     /* San Salvador El Salvador temple */    
     document.getElementById("sv-address").innerHTML = templeData.temples[2].address;  
