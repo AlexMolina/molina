@@ -1,0 +1,162 @@
+{
+  "temples": [
+    {
+      "templeName": "Guatemala City Guatemala Temple",
+      "closures": [
+        {
+          "closureYear": "2018",
+          "closureDays": [
+            {
+              "closureDay": "Tuesday, December 25, 2018"
+            }
+          ]
+        },
+        {
+          "closureYear": "2019",
+          "closureDays": [
+            {
+              "closureDay": "Tuesday, January 1, 2019"
+            },
+            {
+              "closureDay": "Monday, January 7, 2019 - Monday, January 21, 2019"
+            },
+            {
+              "closureDay": "Saturday, April 6, 2019"
+            },
+            {
+              "closureDay": "Wednesday, May 1, 2019 (Limited Hours)"
+            },
+            {
+              "closureDay": "Monday, July 1, 2019 - Monday, July 15, 2019"
+            },
+            {
+              "closureDay": "Saturday, October 5, 2019"
+            },
+            {
+              "closureDay": "Friday, November 1, 2019 (Limited Hours)"
+            },
+            {
+              "closureDay": "Tuesday, December 24, 2019"
+            },
+            {
+              "closureDay": "Wednesday, December 25, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 31, 2019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templeName": "Quetzaltenango Guatemala temple",
+      "closures": [
+        {
+          "closureYear": "2018",
+          "closureDays": [
+            {
+              "closureDay": "Tuesday, December 25, 2018"
+            }
+			]
+        },
+        {
+          "closureYear": "2019",
+          "closureDays": [
+            {
+              "closureDay": "Tuesday, January 1, 2019"
+            },
+            {
+              "closureDay": "Monday, January 21, 2019 - Monday, February 4, 2019"
+            },
+            {
+              "closureDay": "Saturday, April 6, 2019"
+            },
+            {
+              "closureDay": "Monday, July 15, 2019 - Monday, July 29, 2019"
+            },
+            {
+              "closureDay": "Saturday, October 5, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 24, 2019"
+            },
+            {
+              "closureDay": "Wednesday, December 25, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 31, 2019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templeName": "San Salvador El Salvador Temple",
+      "closures": [
+        {
+          "closureYear": "2019",
+          "closureDays": [
+            {
+              "closureDay": "Tuesday, January 1, 2019"
+            },
+            {
+              "closureDay": "Tuesday, March 5, 2019 - Monday, March 25, 2019"
+            },
+            {
+              "closureDay": "Saturday, April 6, 2019"
+            },
+            {
+              "closureDay": "Monday, September 2, 2019 - Monday, September 16, 2019"
+            },
+            {
+              "closureDay": "Saturday, October 5, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 24, 2019 - Wednesday, December 25, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 31, 2019"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templeName": "Tegucigalpa Honduras Temple",
+	  "address": "La Iglesia de Jesucristo S.U.D.</br>Templo de la Ciudad de Tegucigalpa</br>Residencial Roble Oeste Boulevard Roble Oeste,</br>3ra Calle Sur., Comayagüela, M.D.C.,</br>Francisco Morazán, Honduras</br>",
+	  "telephone": "(504) 2264-1212, 1211, or 1213",
+	  "services": "&#187; No clothing rental available</br>&#187; No cafeteria available</br>&#187; Patron housing available</br>&#187; Patron housing available</br>&#187; Distribution center nearby</br>",
+      "closures": [
+        {
+          "closureYear": "2019",
+          "closureDays": [
+            {
+              "closureDay": "Tuesday, January 1, 2019"
+            },
+            {
+              "closureDay": "Saturday, April 6, 2019"
+            },
+            {
+              "closureDay": "Monday, June 3, 2019 - Monday, June 17, 2019"
+            },
+            {
+              "closureDay": "Saturday, October 5, 2019"
+            },
+            {
+              "closureDay": "Monday, November 4, 2019 - Monday, November 18, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 24, 2019"
+            },
+            {
+              "closureDay": "Wednesday, December 25, 2019"
+            },
+            {
+              "closureDay": "Tuesday, December 31, 2019"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

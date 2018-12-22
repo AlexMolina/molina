@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/device-small.css">
@@ -18,6 +20,8 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="js/hamburger.js"></script>            
+        <script src="js/accordionMenu.js"></script>            
+        <script src="js/temples.js"></script>            
     </head>
     <body>   
       
@@ -64,8 +68,8 @@
 
         <nav>
             <div class="topnav" id="myNav">
-                <a href="#" class="active">Home</a>
-                <a href="temple.html">Temples</a>
+                <a href="index.html">Home</a>
+                <a href="#" class="active">Temples</a>
                 <a href="#">Reservation</a>
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
@@ -77,74 +81,55 @@
 
         <main>
 
-            <div>
-                <img class="mySlides" src="images/guatemala_city_guatemala_temple_lds.jpg">
-                <img class="mySlides" src="images/quetzaltenango_guatemala_temple_lds.jpg">
-                <img class="mySlides" src="images/tegucigalpa_honduras_temple_lds.jpg">
-                <img class="mySlides" src="images/san_salvador_el_salvadot_temple_lds.jpg">
-            </div>            
-
-
-            <br>
-            <h2>Information</h2>
-            <br>
-
-            <section class="home-section">
-                <div class="div-section">
-                    <div class="town-data">
-                        <strong>Guatemala City Temple</strong>
-                        <p><strong>Address</strong></br>
-                            24 Avenida 2-20, Zona 15</br>
-                            Vista Hermosa 1</br>
-                            Guatemala Guatemala City, Guatemala</br>
-                            <strong>Telephone</strong></br>
-                            (502) 2369-3426</br>
-                            <strong>Services</strong></br>
-                            &#187; Clothing rental available</br>
-                            &#187; No cafeteria available</br>
-                            &#187; Patron housing available</br>
-                            &#187; Distribution center nearby</br>
-                        </p>
-                    </div>
-                    <div>
-                        <img class="img-town" src="images/guatemala_city_guatemala_temple_lds-small.jpg" alt="Guatemala City Temple">
-                    </div>
+            <div id="accordion">
+                <div class="headings-panel">Guatemala City Guatemala Temple</div>
+                <div>
+                  <p><span id="gt-temple"></span></p>
                 </div>
-
-                <div class="div-section">
-                    <div class="town-data">
-                        <strong>The Temple Inn & Suites</strong></br></br>
-                        <p><strong>Some of the specialized services and features</strong></br>
-                            &#187; Free access to changing rooms for temple</br>
-                            &#187; Play room and low cost</br>
-                            &#187; Long term stay accommodations</br>
-                            &#187; A temple history themed reception</br>
-                            and sitting area</br>
-                            &#187; A wedding reception hall</br>
-                            &#187; A business center that supports</br>
-                            family search</br></br>
-
-                            <strong>Some Free Amenities</strong></br>
-                            &#187; Breakfast</br>
-                            &#187; Exercise/workout room</br>
-                            &#187; Indoor pool</br>
-                            &#187; WiFi high-speed internet access</br>
-                            &#187; Parking</br>
-                            &#187; A business center that supports</br>
-                            family search and ordinance work
-                        </p>
-                    </div>
+                <div class="headings-panel">Quetzaltenango Guatemala Temple</div>
+                <div>
+                  <p>
+                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                  suscipit faucibus urna.
+                  </p>
                 </div>
-            </section>
-            
+                <div class="headings-panel">San Salvador El Salvador Temple</div>
+                <div>
+                  <p>
+                  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                  </p>
+                  <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                  </ul>
+                </div>
+                <div class="headings-panel">Tegucigalpa Honduras Temple</div>
+                <div>
+                  <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                  mauris vel est.
+                  </p>
+                  <p>
+                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos.
+                  </p>
+                </div>
+              </div>            
         </main>
 
         <footer>
         &copy; <span id="currentdate"></span> | 4810 Montgomery Ln #500 Bethesda, MD 20814 | Telephone: (999) 9999-9999 | Email: info@thetempleinn.com
         </footer>
 
-        <script src="js/slideshow.js"></script>            
         <script src="js/currentdate.js"></script>            
-        <script src="js/home-cities.js"></script>            
     </body>
 </html>
