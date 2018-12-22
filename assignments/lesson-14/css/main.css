@@ -167,10 +167,6 @@ p.label-text {
 
 p.value-text {
     padding-left: 1rem;
-    text-align: right;
-    display: inline;
-    font-weight: bold;  
-    color: #FFD700;
 }
 
 figure {
