@@ -371,7 +371,23 @@ input:valid {
     color: #FFD700;
 }
 
-.headings-panel {
+.accordion-panel {
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid #999898;
+    background: #ccc;
+}
+.accordion-panel p {
+	line-height: 21px;
+	color: #444;
+	font-size: 13px;
+    margin-top:0;
+}
+.accordion-toggle {
+	border-bottom:0;
+}
+.accordion-link {
     flex: auto;
     flex-direction: column;
     align-items: center;
