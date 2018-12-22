@@ -2,6 +2,9 @@
   "temples": [
     {
       "templeName": "Guatemala City Guatemala Temple",
+	  "address": "24 Avenida 2-20, Zona 15</br>Vista Hermosa 1</br>Guatemala Guatemala City, Guatemala</br>",
+	  "telephone": "(502) 2369-3426",
+	  "services": "&#187; Clothing rental available</br>&#187; No cafeteria available</br>&#187; Patron housing available</br>&#187; Distribution center nearby</br>",
       "closures": [
         {
           "closureYear": "2018",
@@ -50,6 +53,9 @@
     },
     {
       "templeName": "Quetzaltenango Guatemala temple",
+	  "address": "9a. Calle 4-03, Zona 9</br>Frente a Residenciales Los Cerezos 1</br>09009 Quezaltenango Quetzaltenango, Guatemala</br>",
+	  "telephone": "(502) 7728-1603",
+	  "services": "&#187; No clothing rental available</br>&#187; Cafeteria available</br>&#187; Patron housing available</br>&#187; Distribution center nearby</br>",
       "closures": [
         {
           "closureYear": "2018",
@@ -92,6 +98,9 @@
     },
     {
       "templeName": "San Salvador El Salvador Temple",
+	  "address": "Avenida El Espino y Calle El Pedregal</br>Colonia San Benito</br>CP Antiguo Cuscatlán, La Libertad, El Salvador</br>",
+	  "telephone": "(503) 2520-2631",
+	  "services": "&#187; No Clothing rental available</br>&#187; No cafeteria available</br>&#187; No Patron housing available</br>&#187; Distribution center nearby</br>",
       "closures": [
         {
           "closureYear": "2019",
