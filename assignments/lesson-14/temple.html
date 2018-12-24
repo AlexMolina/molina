@@ -22,7 +22,11 @@
         <![endif]-->
         <script src="js/hamburger.js"></script>            
         <script src="js/accordionMenu.js"></script>            
-        <script src="js/temples.js"></script>            
+        <script src="js/temples.js"></script>   
+        <script src="js/weatherGT.js"></script>                  
+        <script src="js/weatherGTQ.js"></script>                  
+        <script src="js/weatherSV.js"></script>                  
+        <script src="js/weatherHN.js"></script>                  
     </head>
     <body>   
             https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
@@ -84,7 +88,26 @@
             <div class="accordion-toggle">
                 <div class="accordion-link accordion-on">Guatemala City Guatemala Temple</div>
                 <div class="accordion-panel" style="display:block;">
-                    <img src="images/guatemala_city_guatemala_temple_lds.jpg" alt="Guatemala city temple">
+                    <div class="div-weathersummary">
+                        <figure>
+                            <img src="images/guatemala_city_guatemala_temple_lds.jpg" alt="Guatemala city temple" alt="Town" sizes="50vw"
+                                srcset="images/guatemala_city_guatemala_temple_lds.jpg 300w,
+                                        images/guatemala_city_guatemala_temple_lds.jpg 1200w">
+                        </figure>
+                        <section class="weathersummary">
+                            <h3>Weather Summary</h3>
+                            <div class="div-clear">
+                                <p class="label-txt">Currently:</p>
+                                <p class="value-txt"><span id="weatherGT"></span></p><br>
+                                <p class="label-txt">Temperature:</p>
+                                <p class="value-txt"><span id="temperatureGT"></span> &deg;F</p><br>
+                                <p class="label-txt">Humidity:</p>
+                                <p class="value-txt"><span id="humidityGT"></span>%</p><br>
+                                <p class="label-txt">Wind Speed:</p>
+                                <p class="value-txt"><span id="windGT"></span> mph</p>
+                            </div>
+                        </section>
+                    </div>   
                     <div>
                         <p class="label-text">Address:</p><br>
                         <p class="value-text"><span id="gt-address"></span></p><br>
@@ -101,7 +124,26 @@
                 </div>
                 <div class="accordion-link">Quetzaltenango Guatemala Temple</div>
                 <div class="accordion-panel" style="display:none;">
-                    <img src="images/quetzaltenango_guatemala_temple_lds.jpg" alt="Quetzaltenango Guatemala temple">
+                    <div class="div-weathersummary">
+                        <figure>
+                            <img src="images/quetzaltenango_guatemala_temple_lds.jpg" alt="Quetzaltenango Guatemala temple" alt="Town" sizes="50vw"
+                                srcset="images/quetzaltenango_guatemala_temple_lds.jpg 300w,
+                                        images/quetzaltenango_guatemala_temple_lds.jpg 1200w">
+                        </figure>
+                        <section class="weathersummary">
+                            <h3>Weather Summary</h3>
+                            <div class="div-clear">
+                                <p class="label-txt">Currently:</p>
+                                <p class="value-txt"><span id="weatherGTQ"></span></p><br>
+                                <p class="label-txt">Temperature:</p>
+                                <p class="value-txt"><span id="temperatureGTQ"></span> &deg;F</p><br>
+                                <p class="label-txt">Humidity:</p>
+                                <p class="value-txt"><span id="humidityGTQ"></span>%</p><br>
+                                <p class="label-txt">Wind Speed:</p>
+                                <p class="value-txt"><span id="windGTQ"></span> mph</p>
+                            </div>
+                        </section>
+                    </div>   
                     <div>
                         <p class="label-text">Address:</p><br>
                         <p class="value-text"><span id="gtq-address"></span></p><br>
@@ -118,7 +160,26 @@
                 </div>
                 <div class="accordion-link">San Salvador El Salvador Temple</div>
                 <div class="accordion-panel" style="display:none;">
-                    <img src="images/tegucigalpa_honduras_temple_lds.jpg" alt="San Salvador El Salvador Temple">
+                    <div class="div-weathersummary">
+                        <figure>
+                            <img src="images/san_salvador_el_salvadot_temple_lds.jpg" alt="Tegucigalpa Honduras Temple" alt="Town" sizes="50vw"
+                                srcset="images/san_salvador_el_salvadot_temple_lds.jpg 300w,
+                                        images/san_salvador_el_salvadot_temple_lds.jpg 1200w">
+                        </figure>
+                        <section class="weathersummary">
+                            <h3>Weather Summary</h3>
+                            <div class="div-clear">
+                                <p class="label-txt">Currently:</p>
+                                <p class="value-txt"><span id="weatherSV"></span></p><br>
+                                <p class="label-txt">Temperature:</p>
+                                <p class="value-txt"><span id="temperatureSV"></span> &deg;F</p><br>
+                                <p class="label-txt">Humidity:</p>
+                                <p class="value-txt"><span id="humiditySV"></span>%</p><br>
+                                <p class="label-txt">Wind Speed:</p>
+                                <p class="value-txt"><span id="windSV"></span> mph</p>
+                            </div>
+                        </section>
+                    </div>   
                     <div>
                         <p class="label-text">Address:</p><br>
                         <p class="value-text"><span id="sv-address"></span></p><br>
@@ -133,7 +194,26 @@
                 </div>
                 <div class="accordion-link">Tegucigalpa Honduras Temple</div>
                 <div class="accordion-panel" style="display:none;">
-                    <img src="images/san_salvador_el_salvadot_temple_lds.jpg" alt="Tegucigalpa Honduras Temple">
+                    <div class="div-weathersummary">
+                        <figure>
+                            <img src="images/tegucigalpa_honduras_temple_lds.jpg" alt="Tegucigalpa Honduras Temple" sizes="50vw"
+                                srcset="images/tegucigalpa_honduras_temple_lds.jpg 300w,
+                                        images/tegucigalpa_honduras_temple_lds.jpg 1200w">
+                        </figure>
+                        <section class="weathersummary">
+                            <h3>Weather Summary</h3>
+                            <div class="div-clear">
+                                <p class="label-txt">Currently:</p>
+                                <p class="value-txt"><span id="weatherHN"></span></p><br>
+                                <p class="label-txt">Temperature:</p>
+                                <p class="value-txt"><span id="temperatureHN"></span> &deg;F</p><br>
+                                <p class="label-txt">Humidity:</p>
+                                <p class="value-txt"><span id="humidityHN"></span>%</p><br>
+                                <p class="label-txt">Wind Speed:</p>
+                                <p class="value-txt"><span id="windHN"></span> mph</p>
+                            </div>
+                        </section>
+                    </div>   
                     <div>
                         <p class="label-text">Address:</p><br>
                         <p class="value-text"><span id="hn-address"></span></p><br>
