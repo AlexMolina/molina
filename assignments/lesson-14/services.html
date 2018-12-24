@@ -11,17 +11,19 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/device-small.css">
         <link rel="stylesheet" href="css/device-large.css">
-        <title>The Temple Inn & Suites | Home</title>
+        <title>The Temple Inn & Suites | Services</title>
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="js/hamburger.js"></script>            
+        <script src="js/accordionMenu.js"></script>            
     </head>
     <body>   
-      
         <header>
             <div class="header">
                 <picture> 
@@ -62,15 +64,14 @@
                 </form>
             </div>
             
-            </div>
         </header>
 
         <nav>
             <div class="topnav" id="myNav">
-                <a href="#" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="temple.html">Temples</a>
                 <a href="reservation.html">Reservation</a>
-                <a href="services.html">Services</a>
+                <a href="#" class="active">Services</a>
                 <a href="contact.html">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
                     <i class="fa fa-bars"></i>
@@ -79,74 +80,36 @@
         </nav>
 
         <main>
-
-            <div>
-                <img class="mySlides" src="images/guatemala_city_guatemala_temple_lds.jpg">
-                <img class="mySlides" src="images/quetzaltenango_guatemala_temple_lds.jpg">
-                <img class="mySlides" src="images/tegucigalpa_honduras_temple_lds.jpg">
-                <img class="mySlides" src="images/san_salvador_el_salvadot_temple_lds.jpg">
-            </div>            
-
-
-            <br>
-            <h2>Information</h2>
-            <br>
-
-            <section class="home-section">
-                <div class="div-section">
-                    <div class="town-data">
-                        <strong>Guatemala City Temple</strong>
-                        <p><strong>Address</strong></br>
-                            24 Avenida 2-20, Zona 15</br>
-                            Vista Hermosa 1</br>
-                            Guatemala Guatemala City, Guatemala</br>
-                            <strong>Telephone</strong></br>
-                            (502) 2369-3426</br>
-                            <strong>Services</strong></br>
-                            &#187; Clothing rental available</br>
-                            &#187; No cafeteria available</br>
-                            &#187; Patron housing available</br>
-                            &#187; Distribution center nearby</br>
-                        </p>
-                    </div>
+            <div class="accordion-toggle">
+                <div class="accordion-link accordion-on">Some of the specialized services and features include</div>
+                <div class="accordion-panel" style="display:block;">
                     <div>
-                        <img class="img-town" src="images/guatemala_city_guatemala_temple_lds-small.jpg" alt="Guatemala City Temple">
+                        <p class="label-text">&#187; <span>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</span></p><br>
+                        <p class="label-text">&#187; <span>A play room and low cost, short-term babysitting services for the children of patrons</span></p><br>
+                        <p class="label-text">&#187; <span>Long term stay accommodations in kitchenette suites for full-time temple missionaries</span></p><br>
+                        <p class="label-text">&#187; <span>A temple history themed reception and sitting area</span></p><br>
+                        <p class="label-text">&#187; <span>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</span></p><br>
+                        <p class="label-text">&#187; <span>A business center that supports family search and ordinance work</span></p><br>
                     </div>
                 </div>
-
-                <div class="div-section">
-                    <div class="town-data">
-                        <strong>The Temple Inn & Suites</strong></br></br>
-                        <p><strong>Some of the specialized services and features</strong></br>
-                            &#187; Free access to changing rooms for temple</br>
-                            &#187; Play room and low cost</br>
-                            &#187; Long term stay accommodations</br>
-                            &#187; A temple history themed reception</br>
-                            and sitting area</br>
-                            &#187; A wedding reception hall</br>
-                            &#187; A business center that supports</br>
-                            family search</br></br>
-
-                            <strong>Some Free Amenities</strong></br>
-                            &#187; Breakfast</br>
-                            &#187; Exercise/workout room</br>
-                            &#187; Indoor pool</br>
-                            &#187; WiFi high-speed internet access</br>
-                            &#187; Parking</br>
-                            &#187; A business center that supports</br>
-                            family search and ordinance work
-                        </p>
+                <div class="accordion-link">Some of the free amenities include</div>
+                <div class="accordion-panel" style="display:none;">
+                    <div>
+                        <p class="label-text">&#187; <span>Breakfast</span></p><br>
+                        <p class="label-text">&#187; <span>Exercise/workout room</span></p><br>
+                        <p class="label-text">&#187; <span>Indoor pool</span></p><br>
+                        <p class="label-text">&#187; <span>WiFi high-speed internet access and smart tvs</span></p><br>
+                        <p class="label-text">&#187; <span>Parking</span></p><br>
+                        <p class="label-text">&#187; <span>Family history consultation and family ordinance card services</span></p><br>
                     </div>
                 </div>
-            </section>
-            
+            </div>   
         </main>
 
         <footer>
             &copy; <span id="currentdate"></span> | 4810 Montgomery Ln #500 Bethesda, MD 20814 | Telephone: (999) 9999-9999 | Email: info@thetempleinn.com
         </footer>
 
-        <script src="js/slideshow.js"></script>            
         <script src="js/currentdate.js"></script>            
     </body>
 </html>
