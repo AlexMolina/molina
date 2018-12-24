@@ -169,6 +169,20 @@ p.value-text {
     padding-left: 1rem;
 }
 
+p.label-txt {
+    display: inline;
+    font-weight: bold;  
+    padding-left: 1rem;
+}
+
+p.value-txt {
+    padding-left: 1rem;
+    text-align: right;
+    display: inline;
+    font-weight: bold;  
+    color: #FFD700;
+}
+
 figure {
     margin: 0;
 }
@@ -378,7 +392,8 @@ input:valid {
     border-bottom: 1px solid #999898;
     background: #ccc;
 }
-.accordion-panel p {
+
+p {
 	line-height: 21px;
 	color: #444;
 	font-size: 13px;
